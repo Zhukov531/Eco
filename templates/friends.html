@@ -44,24 +44,29 @@
             </a>
             <div class="bottom">
                 <div class="menu">
-                    <div class="footer-blocks">
-                        <a href="{{ url_for('profile') }}" class="footer-block_profile">
-                            <img src="{{ url_for('static', path='img/icons/Group 145.svg') }}" alt="">
-                        </a>
-                        <a href="{{ url_for('friends') }}" class="footer-block_friends">
-                            <img src="{{ url_for('static', path='img/icons/Group 146-1.svg') }}" alt="">
-                        </a>
-                        <a href="{{ url_for('index') }}" class="footer-block_play">
-                            <img src="{{ url_for('static', path='img/icons/Group 147.svg') }}" alt="">
-                        </a>
-                        <a href="{{ url_for('upgrade') }}" class="footer-block_upgrade">
-                            <img src="{{ url_for('static', path='img/icons/Group 149.svg') }}" alt="">
-                        </a>
-                        <a href="{{ url_for('tasks') }}" class="footer-block_tasks">
-                            <img src="{{ url_for('static', path='img/icons/Group 148.svg') }}" alt="">
-                        </a>
+                        <div class="footer-blocks">
+                            <a href="{{ url_for('profile') }}" class="footer-block_profile">
+                                <img src="{{ url_for('static', path='img/icons/profile_gray.svg') }}" alt="">
+                                <p>Профиль</p>
+                            </a>
+                            <a href="{{ url_for('friends') }}" class="footer-block_friends">
+                                <img src="{{ url_for('static', path='img/icons/friends_green.svg') }}" alt="">
+                                <p>Друзья</p>
+                            </a>
+                            <a href="{{ url_for('index') }}" class="footer-block_play">
+                                <img src="{{ url_for('static', path='img/icons/play_gray.svg') }}" alt="">
+                                <p>Играть</p>
+                            </a>
+                            <a href="{{ url_for('upgrade') }}" class="footer-block_upgrade">
+                                <img src="{{ url_for('static', path='img/icons/up_gray.svg') }}" alt="">
+                                <p>Улучшения</p>
+                            </a>
+                            <a href="{{ url_for('tasks') }}" class="footer-block_tasks">
+                                <img src="{{ url_for('static', path='img/icons/tasks_gray.svg') }}" alt="">
+                                <p>Задания</p>
+                            </a>
+                        </div>
                     </div>
-                </div>
             </div> <!-- Closing tag for the "bottom" class -->
         </div>
     </div>

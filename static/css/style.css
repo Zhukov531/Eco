@@ -656,3 +656,26 @@ body {
     display: flex;
     align-items: center;
 }
+
+.footer-blocks{
+    background: red;
+}
+.footer-blocks p{
+    margin: 0;
+
+}
+.footer-block_profile,
+.footer-block_friends,
+.footer-block_play,
+.footer-block_upgrade,
+.footer-block_tasks {
+    width: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    background: blue;
+}
