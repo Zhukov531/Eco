@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/preview.css') }}">
+</head>
+<body>
+    
+    <div class="app">
+        <div class="app-content">
+            <div class="top-top">
+            <div class="header">
+                <img class="info-lang" src="{{ url_for('static', path='img/info.svg') }}" alt="info.svg">
+                <div class="rating">
+                    <div class="rating-content">
+                        <div class="rait-top">
+                            <img src="{{ url_for('static', path='img/Trophy.svg') }}" alt="">
+                            <p>Рейтинг: </p>
+                            <span>#134</span>
+                        </div>
+                        <div class="rait-bottom">
+                            <p>Название компании</p>
+                        </div>
+                    </div>
+                </div>
+                <img class="info-lang" src="{{ url_for('static', path='img/lang.svg') }}" alt="lang.svg">
+            </div>
+            <div class="eco-schetchik">
+                <div class="green-eco">
+                    <p>
+                        <img src="{{ url_for('static', path='img/Ecocoin1.svg') }}" alt="">
+                        Eco:
+                    </p>
+                    <span>1.2M</span>
+                </div>
+                <div class="gold-eco">
+                    <p>
+                        <img src="{{ url_for('static', path='img/goldmoney.svg') }}" alt="">
+                        Activ:
+                    </p>
+                    <span>2</span>
+                </div>
+            </div>
+            </div>
+            <div class="bluelist">
+                <div class="bluelist-content">
+                    <div class="bluelist-content-all">
+                        <div class="drops">
+                            <img src="{{ url_for('static', path='img/whitedrop.svg') }}" alt="Drop" class="drop" id="drop1">
+                            <img src="{{ url_for('static', path='img/whitedrop.svg') }}" alt="Drop" class="drop" id="drop2">
+                            <img src="{{ url_for('static', path='img/whitedrop.svg') }}" alt="Drop" class="drop" id="drop3">
+                            <img src="{{ url_for('static', path='img/whitedrop.svg') }}" alt="Drop" class="drop" id="drop4">
+                            <img src="{{ url_for('static', path='img/whitedrop.svg') }}" alt="Drop" class="drop" id="drop5">
+                        </div>
+                        <div class="manag-btns">
+                            <div class="manag-info">
+                                <div class="manag-timer">
+                                    <div class="timer" id="timer">00:00:00</div>
+                                </div>
+                                <div class="manag-text">
+                                    <p>Посадите дерево</p>
+                                </div>
+                            </div>
+                            <button class="button" id="seedButton">
+                                <img src="{{ url_for('static', path='img/seed.svg') }}" alt="Семечко">
+                            </button>
+                            <button class="button" id="waterButton" style="display: none;">
+                                <img src="{{ url_for('static', path='img/dropbtn.svg') }}" alt="Капля">
+                            </button>
+                            <button class="button" id="transferButton" style="display: none;">
+                                <img src="{{ url_for('static', path='img/resycle.svg') }}" alt="Передать дерево в заповедник">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu">
+                    <div class="footer-blocks">
+                        <a href="{{ url_for('profile') }}" class="footer-block_profile">
+                            <img src="{{ url_for('static', path='img/icons/Group 145.svg') }}" alt="">
+                        </a>
+                        <a href="{{ url_for('friends') }}" class="footer-block_friends">
+                            <img src="{{ url_for('static', path='img/icons/Group 146.svg') }}" alt="">
+                        </a>
+                        <a href="{{ url_for('index') }}" class="footer-block_play">
+                            <img src="{{ url_for('static', path='img/icons/Group 147-1.svg') }}" alt="">
+                        </a>
+                        <a href="{{ url_for('upgrade') }}" class="footer-block_upgrade">
+                            <img src="{{ url_for('static', path='img/icons/Group 149.svg') }}" alt="">
+                        </a>
+                        <a href="{{ url_for('tasks') }}" class="footer-block_tasks">
+                            <img src="{{ url_for('static', path='img/icons/Group 148.svg') }}" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="circle-overlay">
+                    <img src="{{ url_for('static', path='/img/1.svg') }}" alt="Горшок" id="mainImage">
+                </div>
+
+
+    <script src="{{ url_for('static', path='js/preview.js') }}"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://webappcontent.telegram.org/js/jquery.min.js"></script>
+    <script>
+        Telegram.WebApp.ready();
+        var tg = Telegram.WebApp.initDataUnsafe || 0;
+
+        $.ajax({
+            url: '/user-data',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                user_id: tg.user.id,
+                name: tg.user.first_name,
+            }),
+            success: function(response) {
+                if (response.success) {
+                    document.getElementById('ecoAmount').textContent = response.eco;
+                    document.getElementById('ecoAmount2').textContent = response.jeton;
+                    
+                    console.log('Данные Telegram успешно проверены и обновлены');
+                } else {
+                    console.log('Ошибка при проверке данных Telegram');
+                }
+            },
+            error: function() {
+                console.log('Ошибка при отправке данных на сервер');
+            }
+        });
+    </script>
+</body>
+</html>

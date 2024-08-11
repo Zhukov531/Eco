@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'NoirPro-Regular';
+    src: url('../fonts/noirpro-regular.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/noirpro-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+        url('../fonts/noirpro-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/noirpro-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/noirpro-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/noirpro-regular.svg#noirpro-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+body{
+    background-size: cover;
+    overflow: auto;
+}
+.app {
+}
+.app-content {
+}
+.top {
+
+}
+.bottom{
+    /* background: red; */
+}
+
+.header {
+
+    flex-direction: column;
+}
+.header img{
+    width: 115px;
+}
+.ecologo{
+}
+.zadanja {
+    margin-top: 15px;
+}
+.header-txt {
+    margin-top: 25px;
+    max-width: 320px;
+    text-align: center;
+}
+.center-content {
+    margin-top: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.center-btns {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: red; */
+
+}
+
+.daily,
+.achiv {
+    border: 1px solid #63F23B;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    width: 300px;
+    color: black;
+}
+.dostupno{
+    color: black;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 30px;
+    /* width: 60%; */
+}
+.dostupno-zadaniy {
+}
+
+.tasks-start {
+    background: #63F23B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    border-radius: 50px;
+    /* padding: 5px; */
+}
+.taski {
+    background: #292738;
+    border-radius: 50px 50px 0 0;
+    width: 100%;
+    color: white;
+    padding: 10px;
+}
+.activenost {
+    padding: 10px;
+
+}
+.activenost p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.activenost img{
+    margin-left: 10px;
+    width: 20px;
+}
+.bottom{
+    
+
+}
+.blueblock{
+    /* width: 95%; */
+    align-items: center;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.bluecontent{
+    /* background: green; */
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* padding: 10px; */
+
+}
+.line1{
+    width: 100%;
+    height: 1px;
+    background: gray;
+    margin: 10px 0;
+}
+
+.task2 {
+    background: white;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 1px solid #63F23B;
+    width: 100%;
+}
+.task-img {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.task-img img{
+    width: 60px;
+}
+.task-text p{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.task-text img{
+    margin-left: 10px;
+}
+a{
+        text-decoration: none;
+}
+.bluecontent a{
+    width: 80%;
+}
+
+.daily-quests{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000085;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dq-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 90%;
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid #63F23B;
+    text-align: center;
+}
+.dq-content p{
+    margin: 10px 0;
+}
+.dq-hud {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.dq-btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    color: black;
+}
+.dq-btn-complete, .dq-btn-ready, .dq-btn, .dq-baff {
+    width: 50px;
+    height: 50px;
+    background: #63F23B;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 5px;
+    color: black;
+}
+.dq-btn-ready{
+    background: white;
+    border: 2px solid #63F23B;
+    color: black;
+
+}
+.dq-btn, .dq-baff{
+    background: white;
+    border: 1px solid gray;
+
+}
+.dq-btn span{
+    font-size: 12px;
+}
+.dq-baff{
+    font-size: 12px;
+}
+
+/* Скрываем daily-quests по умолчанию */
+.hidden {
+    display: none;
+}
+
+/* Стиль для daily-quests */
+.daily-quests {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Стиль для содержимого daily-quests */
+.dq-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+/* Стиль для крестика (кнопки закрытия) */
+.close-tasks-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}

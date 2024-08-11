@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrade</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='css/friends.css') }}">
+</head>
+<body>
+    <div class="app">
+        <div class="app-content">
+            <div class="top">
+                <div class="header">
+                    <img class="ecologo" src="{{ url_for('static', path='img/logo.svg') }}" alt="">
+                    <p class="zadanja">Друзья</p>
+                    <span class="header-txt">
+                        Приглашайте друзей и получайте 10%
+                        от их заработка и 500 (eco) сразу,
+                        которые можно использовать
+                        для покупки улучшений.
+                    </span>
+                </div>
+                <div class="center-content">
+                    <div class="center-btns">
+                        <a href="">
+                            <div class="btn-ref-link">
+                                <p>Скопировать реферальную ссылку</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- КНОПКА ДРУГА -->
+            <a href="">
+                <div class="center-content-btns">
+                    <div class="friend-btn">
+                        <div class="fr-name"><div class="fr-num">1</div>Имя Друга</div>
+                        <div class="fr-eco">1.000 <img src="{{ url_for('static', path='img/ecocoin3.svg') }}" alt=""> </div>
+                    </div>
+                </div>
+            </a>
+            <div class="bottom">
+                <div class="menu">
+                    <div class="footer-blocks">
+                        <a href="{{ url_for('profile') }}" class="footer-block_profile">
+                            <img src="{{ url_for('static', path='img/icons/Group 145.svg') }}" alt="">
+                        </a>
+                        <a href="{{ url_for('friends') }}" class="footer-block_friends">
+                            <img src="{{ url_for('static', path='img/icons/Group 146-1.svg') }}" alt="">
+                        </a>
+                        <a href="{{ url_for('index') }}" class="footer-block_play">
+                            <img src="{{ url_for('static', path='img/icons/Group 147.svg') }}" alt="">
+                        </a>
+                        <a href="{{ url_for('upgrade') }}" class="footer-block_upgrade">
+                            <img src="{{ url_for('static', path='img/icons/Group 149.svg') }}" alt="">
+                        </a>
+                        <a href="{{ url_for('tasks') }}" class="footer-block_tasks">
+                            <img src="{{ url_for('static', path='img/icons/Group 148.svg') }}" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- Closing tag for the "bottom" class -->
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', path='js/script-profile.js') }}"></script>
+</body>
+</html>

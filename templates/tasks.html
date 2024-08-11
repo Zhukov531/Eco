@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='css/tasks.css') }}">
+</head>
+<body>
+    <div class="app">
+        <div class="app-content">
+            <div class="top">
+                <div class="header">
+                    <img class="ecologo" src="{{ url_for('static', path='img/logo.svg') }}" alt="">
+                    <p class="zadanja">Задания</p>
+                    <span class="header-txt">После выполнения каждого задания вы будете получать токены ECO</span>
+                </div>
+                <div class="center-content">
+                    <div class="center-btns">
+                        <a href="">
+                            <div id="daily-tasks-btn" class="daily">Ежедневное задание</div>
+                        </a>
+                        <a href="">
+                            <div class="achiv">Достижения</div>
+                        </a>
+                        <a href="">
+                            <div class="dostupno">Заданий доступно: <span class="dostupno-zadaniy">19</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="blueblock">
+                    <div class="bluecontent">
+                        <div class="tasks-start">
+                            <div class="taski">
+                                <p>Задания</p>
+                            </div>
+                            <div class="activenost">
+                                <p>Прояви Эко-активность </p>
+                                <p>От +50 000 <img src="/static/img/grenmoney.svg" alt=""></p>
+                                <p>От +1 <img src="/static/img/goldmoney.svg" alt=""></p>
+                            </div>
+                        </div>
+                    <div class="line1"></div>
+                        <a href="https://t.me/eco_project_ton">
+                            <div class="task2">
+                                <div class="task-img">
+                                    <img src="/static/img/crypto.svg" alt="">
+                                </div>
+                                <div class="task-text">
+                                    <p>Подпишись на Coin Crypto</p>
+                                    <p>От +2 000 <img src="/static/img/grenmoney.svg" alt=""></p>
+                                    <p>От +5% к прибыли</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="line1"></div>
+                        <a href="https://t.me/eco_project_ton">
+                            <div class="task2">
+                                <div class="task-img">
+                                    <img src="/static/img/poplaunch.svg" alt="">
+                                </div>
+                                <div class="task-text">
+                                    <p>Запусти Pop launch</p>
+                                    <p>От +2 000 <img src="/static/img/grenmoney.svg" alt=""></p>
+                                    <p>От +5% к прибыли</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="line1"></div>
+                        <a href="https://t.me/eco_project_ton">
+                            <div class="task2">
+                                <div class="task-img">
+                                    <img src="/static/img/crypto.svg" alt="">
+                                </div>
+                                <div class="task-text">
+                                    <p>Подпишись на Coin Crypto</p>
+                                    <p>От +2 000 <img src="/static/img/grenmoney.svg" alt=""></p>
+                                    <p>От +5% к прибыли</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="line1"></div>
+                        <a href="https://t.me/eco_project_ton">
+                            <div class="task2">
+                                <div class="task-img">
+                                    <img src="/static/img/crypto.svg" alt="">
+                                </div>
+                                <div class="task-text">
+                                    <p>Подпишись на Coin Crypto</p>
+                                    <p>От +2 000 <img src="/static/img/grenmoney.svg" alt=""></p>
+                                    <p>От +5% к прибыли</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="line1"></div>
+                      
+                    </div>
+                    <div class="menu">
+                        <div class="footer-blocks">
+                            <a href="{{ url_for('profile') }}" class="footer-block_profile">
+                                <img src="{{ url_for('static', path='img/icons/Group 145.svg') }}" alt="">
+                            </a>
+                            <a href="{{ url_for('friends') }}" class="footer-block_friends">
+                                <img src="{{ url_for('static', path='img/icons/Group 146.svg') }}" alt="">
+                            </a>
+                            <a href="{{ url_for('index') }}" class="footer-block_play">
+                                <img src="{{ url_for('static', path='img/icons/Group 147.svg') }}" alt="">
+                            </a>
+                            <a href="{{ url_for('upgrade') }}" class="footer-block_upgrade">
+                                <img src="{{ url_for('static', path='img/icons/Group 149.svg') }}" alt="">
+                            </a>
+                            <a href="{{ url_for('tasks') }}" class="footer-block_tasks">
+                                <img src="{{ url_for('static', path='img/icons/Group 148-1.svg') }}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <div id="daily-quests" class="daily-quests hidden">
+        <div class="dq-content">
+            <div class="dq-hud">
+                <p>Ежедневные задания</p>
+                <img class="close-tasks-btn" id="close-btn" src="{{ url_for('static', path='img/close.svg') }}" alt="" id="close-settings">
+            </div>
+            <p>Добавь $ECO в имя профиля
+                и Заходи каждый день в игру
+                чтобы забрать ежденевную награду</p>
+            <div class="dq-btns"> -->
+
+                <!-- ЗАБРАННОЕ ВОЗНАГРАЖДЕНИЕ -->
+                <!-- <a href="">
+                <div class="dq-btn-complete">
+                    <img src="{{ url_for('static', path='img/Ecocoin1.svg') }}" alt="">
+                    <span>500</span>
+                </div>
+                </a> -->
+                <!-- МОЖНО ЗАБРАТЬ -->
+                <!-- <a href="">
+                <div class="dq-btn-ready">
+                    <img src="{{ url_for('static', path='img/ecocoin2.svg') }}" alt="">
+                    <span>750</span>
+                </div>
+                </a> -->
+                <!-- БАФФ> -->
+                <!-- <a href="">
+                <div class="dq-baff"> 
+                    <span>+5%</span>
+                    <span>к прибыли</span>
+                </div>
+                </a> -->
+                <!-- СЛЕДУЮЩАЯ НАГРАДА -->
+                <!-- <a href="">
+                    <div class="dq-btn">
+                        <img src="{{ url_for('static', path='img/ecocoin3.svg') }}" alt="">
+                        <span>1.000</span>
+                    </div>
+                </a>
+                -->
+                <!-- СЛЕДУЮЩАЯ НАГРАДА -->
+                <!-- <a href="">
+                    <div class="dq-btn">
+                        <img src="{{ url_for('static', path='img/ecocoins.svg') }}" alt="">
+                        <span>1.500</span>
+                    </div>
+                </a> -->
+                <!-- ЗАБРАННОЕ ВОЗНАГРАЖДЕНИЕ -->
+                <!-- <a href="">
+                <div class="dq-btn">
+                    <img src="{{ url_for('static', path='img/Ecocoin1.svg') }}" alt="">
+                    <span>2.000</span>
+                </div>
+                </a> -->
+                <!-- МОЖНО ЗАБРАТЬ -->
+                <!-- <a href="">
+                <div class="dq-btn">
+                    <img src="{{ url_for('static', path='img/ecocoin2.svg') }}" alt="">
+                    <span>2.500</span>
+                </div>
+                </a> -->
+                <!-- БАФФ> -->
+                <!-- <a href="">
+                <div class="dq-baff"> 
+                    <span>+2%</span>
+                    <span>к скорости</span>
+                </div>
+                </a> -->
+                <!-- СЛЕДУЮЩАЯ НАГРАДА -->
+                <!-- <a href="">
+                    <div class="dq-btn">
+                        <img src="{{ url_for('static', path='img/ecocoin3.svg') }}" alt="">
+                        <span>3.000</span>
+                    </div>
+                </a> -->
+               
+                <!-- СЛЕДУЮЩАЯ НАГРАДА -->
+                <!-- <a href="">
+                    <div class="dq-btn">
+                        <img src="{{ url_for('static', path='img/ecocoins.svg') }}" alt="">
+                        <span>4.000</span>
+                    </div>
+                </a> -->
+                <!-- ЗАБРАННОЕ ВОЗНАГРАЖДЕНИЕ -->
+                <!-- <a href="">
+                <div class="dq-btn">
+                    <img src="{{ url_for('static', path='img/Ecocoin1.svg') }}" alt="">
+                    <span>5.000</span>
+                </div>
+                </a> -->
+                <!-- МОЖНО ЗАБРАТЬ -->
+                <!-- <a href="">
+                <div class="dq-btn">
+                    <img src="{{ url_for('static', path='img/ecocoin2.svg') }}" alt="">
+                    <span>6.000</span>
+                </div>
+                </a> -->
+                <!-- БАФФ> -->
+                <!-- <a href="">
+                <div class="dq-baff"> 
+                    <span>+7,5%</span>
+                    <span>к прибыли</span>
+                </div>
+                </a> -->
+                <!-- СЛЕДУЮЩАЯ НАГРАДА
+                <a href="">
+                    <div class="dq-btn">
+                        <img src="{{ url_for('static', path='img/ecocoin3.svg') }}" alt="">
+                        <span>7.000</span>
+                    </div>
+                </a>
+               -->
+                <!-- СЛЕДУЮЩАЯ НАГРАДА -->
+                <!-- <a href="">
+                    <div class="dq-btn">
+                        <img src="{{ url_for('static', path='img/ecocoins.svg') }}" alt="">
+                        <span>8.000</span>
+                    </div>
+                </a> -->
+                <!-- ЗАБРАННОЕ ВОЗНАГРАЖДЕНИЕ -->
+                <!-- <a href="">
+                <div class="dq-btn">
+                    <img src="{{ url_for('static', path='img/Ecocoin1.svg') }}" alt="">
+                    <span>9.000</span>
+                </div>
+                </a> -->
+                <!-- МОЖНО ЗАБРАТЬ -->
+                <!-- <a href="">
+                <div class="dq-btn">
+                    <img src="{{ url_for('static', path='img/ecocoin2.svg') }}" alt="">
+                    <span>10.000</span>
+                </div>
+                </a> -->
+                <!-- БАФФ> -->
+                <!-- <a href="">
+                <div class="dq-baff"> 
+                    <span>+3%</span>
+                    <span>к скорости</span>
+                </div>
+                </a> -->
+                <!-- СЛЕДУЮЩАЯ НАГРАДА -->
+                <!-- <a href="">
+                    <div class="dq-btn">
+                        <img src="{{ url_for('static', path='img/ecocoin3.svg') }}" alt="">
+                        <span>12.500</span>
+                    </div>
+                </a>
+                -->
+                <!-- СЛЕДУЮЩАЯ НАГРАДА -->
+                <!-- <a href="">
+                    <div class="dq-btn">
+                        <img src="{{ url_for('static', path='img/ecocoins.svg') }}" alt="">
+                        <span>15.000</span>
+                    </div>
+                </a> -->
+                <!-- ЗАБРАННОЕ ВОЗНАГРАЖДЕНИЕ -->
+                <!-- <a href="">
+                <div class="dq-btn">
+                    <img src="{{ url_for('static', path='img/Ecocoin1.svg') }}" alt="">
+                    <span>17.500</span>
+                </div>
+                </a> -->
+                <!-- МОЖНО ЗАБРАТЬ -->
+                <!--<a href="">
+                <div class="dq-btn">
+                    <img src="{{ url_for('static', path='img/ecocoin2.svg') }}" alt="">
+                    <span>20.000</span>
+                </div>
+                </a> -->
+                <!-- БАФФ> -->
+                <!-- <a href="">
+                <div class="dq-baff"> 
+                    <span>+10%</span>
+                    <span>к прибыли</span>
+                </div>
+                </a> -->
+                <!-- СЛЕДУЮЩАЯ НАГРАДА -->
+                <!-- <a href="">
+                    <div class="dq-btn">
+                        <img src="{{ url_for('static', path='img/ecocoin3.svg') }}" alt="">
+                        <span>20.000</span>
+                    </div>
+                </a>
+               
+                СЛЕДУЮЩАЯ НАГРАДА
+                <a href="">
+                    <div class="dq-btn">
+                        <img src="{{ url_for('static', path='img/ecocoins.svg') }}" alt="">
+                        <span>20.000</span>
+                    </div>
+                </a>
+                ЗАБРАННОЕ ВОЗНАГРАЖДЕНИЕ
+                <a href=""> 
+                <div class="dq-btn">
+                    <img src="{{ url_for('static', path='img/Ecocoin1.svg') }}" alt="">
+                    <span>20.000</span>
+                </div>
+                </a>
+                МОЖНО ЗАБРАТЬ
+                <a href=""> 
+                <div class="dq-btn">
+                    <img src="{{ url_for('static', path='img/ecocoin2.svg') }}" alt="">
+                    <span>20.000</span>
+                </div>
+                </a>
+                БАФФ>
+                <a href=""> 
+                <div class="dq-baff"> 
+                    <span>+5%</span>
+                    <span>к прибыли</span>
+                </div>
+                </a> -->
+                <!-- СЛЕДУЮЩАЯ НАГРАДА -->
+                <!-- <a href="">
+                    <div class="dq-btn">
+                        <img src="{{ url_for('static', path='img/ecocoin3.svg') }}" alt="">
+                        <span>20.000</span>
+                    </div>
+                </a> -->
+               
+                <!-- СЛЕДУЮЩАЯ НАГРАДА -->
+                <!-- <a href="">
+                    <div class="dq-btn">
+                        <img src="{{ url_for('static', path='img/goldmoney.svg') }}" alt="">
+                        <span>1 active</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="{{ url_for('static', path='js/script-tasks.js') }}"></script>
+    <script src="../static/js/script-tasks.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrade</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='css/upgrade.css') }}">
+</head>
+<body>
+    <div class="app">
+        <div class="app-content">
+            <div class="top">
+                <div class="header">
+                    <img class="ecologo" src="{{ url_for('static', path='img/logo.svg') }}" alt="">
+                    <p class="zadanja">Улучшения</p>
+                    <span class="header-txt">Приобретайте улучшения, чтобы увеличить
+                    свою прибыль и ускорить процессы полива</span>
+                </div>
+                <div class="center-content">
+                    <div class="center-btns">
+                        <a href="">
+                            <div class="daily">
+                                <div class="mnozhitel">
+                                    <img src="{{ url_for('static', path='img/procent.svg') }}" alt="">
+                                    <p>Множитель прибыли</p>
+                                    <span>10%</span>
+                                </div>
+                                <div class="uskorenie">
+                                    <img src="{{ url_for('static', path='img/adrop.svg') }}" alt="">
+                                    <p>Множитель прибыли</p>
+                                    <span>10%</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="blueblock">
+                    <div class="bluecontent">
+                        <div class="up">
+                            <div class="up-content">
+                                <div class="up-text">
+                                    <div class="up-img">
+                                        <img src="{{ url_for('static', path='img/leika.svg') }}" alt="">
+                                        <span>Уровень: 0</span>
+                                    </div>
+                                    <div class="uptext-text">
+                                        <h2>
+                                            Лейка увеличивает
+                                            вашу прибыль
+                                            с каждого полива.
+                                        </h2>
+                                        <p>
+                                            1 уровень: <br> +10% к прибыли
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <div class="up-btn">
+                                        <p>Улучшить за 50,000 <img src="{{ url_for('static', path='img/Ecocoin1.svg') }}" alt=""></p>
+                                    </div>
+                                </a>
+                                <!-- ЗЕЛЕНАЯ КНОПКА -->
+                                <!-- <a href="">
+                                    <div class="up-btn-green">
+                                        <p>Улучшить за 50,000 <img src="{{ url_for('static', path='img/Ecocoin1.svg') }}" alt=""></p>
+                                    </div>
+                                </a> -->
+                                <!-- КНОПКА НЕАКТИВНА -->
+                                <!-- <a href="">
+                                    <div class="up-btn-nonactive">
+                                        <p>Улучшить за 50,000 <img src="{{ url_for('static', path='img/Ecocoin1.svg') }}" alt=""></p>
+                                    </div>
+                                </a> -->
+                                <!-- КНОПКА МАКСИМУМ -->
+                                <!-- <a href="">
+                                    <div class="up-btn-max">
+                                        <p>Максимум</p>
+                                    </div>
+                                </a> -->
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="footer-blocks">
+                            <a href="{{ url_for('profile') }}" class="footer-block_profile">
+                                <img src="{{ url_for('static', path='img/icons/Group 145.svg') }}" alt="">
+                            </a>
+                            <a href="{{ url_for('friends') }}" class="footer-block_friends">
+                                <img src="{{ url_for('static', path='img/icons/Group 146.svg') }}" alt="">
+                            </a>
+                            <a href="{{ url_for('index') }}" class="footer-block_play">
+                                <img src="{{ url_for('static', path='img/icons/Group 147.svg') }}" alt="">
+                            </a>
+                            <a href="{{ url_for('upgrade') }}" class="footer-block_upgrade">
+                                <img src="{{ url_for('static', path='img/icons/Group 149-1.svg') }}" alt="">
+                            </a>
+                            <a href="{{ url_for('tasks') }}" class="footer-block_tasks">
+                                <img src="{{ url_for('static', path='img/icons/Group 148.svg') }}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="{{ url_for('static', path='js/script-profile.js') }}"></script>
+</body>
+</html>

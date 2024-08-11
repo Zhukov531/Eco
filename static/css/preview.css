@@ -1,0 +1,197 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.app {
+    /* background: red; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.app-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* background: green; */
+}
+.top-top{
+    width: 100%;
+    height: 100%;
+    /* background: cyan; */
+}
+.header {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* background: blue; */
+
+}
+.info-lang{
+    width: 30px;
+    padding: 0 30px;
+}
+.rating {
+
+}
+.rating-content {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #292738;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.rait-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #292738;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 30px;
+}
+
+.rait-bottom {
+    padding: 10px 30px;
+}
+.eco-schetchik {
+    width: 100%;
+    margin-top: 20px;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.green-eco, .green-eco p {
+    display: flex;
+    align-items: center;
+}
+.green-eco img, .gold-eco img{
+    width: 30px;
+}
+.gold-eco, .gold-eco p {
+    display: flex;
+    align-items: center;
+}
+.bluelist {
+    
+    background: #292738;
+    width: 100%;
+    border-radius: 50px 50px 0 0 ;
+    height: 100%;
+    margin: 0;
+}
+.bluelist-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    /* background: red; */
+    height: 80%;
+}
+.bluelist-content-all {
+    /* background: pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.drops {
+}
+.drop {
+    /* background: black; */
+    margin: 0 3px;
+}
+.manag-btns {
+    /* background: blue; */
+    display: flex;
+    color: white;
+    margin-top: 30px;
+}
+.manag-info {
+    /* background: palegoldenrod; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.manag-timer {
+    /* background: blue; */
+    border: 1px solid white;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.timer {
+    padding: 10px 30px;
+}
+.manag-text {
+    margin-top: 15px;
+}
+.button {
+    border: none;
+    margin-left: 30px;
+    border-radius: 100px;
+}
+.menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+.footer-blocks {
+    padding: 10px;
+    border-top: 1px solid grey;
+    background: #292738;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* Сделать тень */
+}
+
+.footer-blocks a {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-block_profile img,
+.footer-block_friends img,
+.footer-block_play img,
+.footer-block_upgrade img,
+.footer-block_tasks img {
+    height: 50px;
+}
+.footer-block_play img {
+    height: 60px;
+}
+
+/* Стили для Circle Image */
+.circle-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-overlay img {
+    width: 80%; /* Подгоните размер по необходимости */
+    /* height: 400px; */
+    /* border-radius: 50%; */
+}
