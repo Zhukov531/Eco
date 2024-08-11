@@ -144,8 +144,8 @@ body {
 }
 .top-top{
     width: 100%;
-    height: 50%;
-    /* background: cyan; */
+    height: 45%;
+    background: cyan;
 }
 .bluelist1 {
     background: #292738;
@@ -155,17 +155,20 @@ body {
     margin: 0;
     color: white;
     background: red;
-    height: 50%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .bluelist1-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     /* background: red; */
-    height: 100%;
+    height: 85%;
     background: blue;
-
 }
 .bluelist1-content-all {
     background: pink;
@@ -173,7 +176,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 .eco1, .eco2 {
     display: flex;
@@ -294,7 +297,7 @@ body {
 /* Стили для Circle Image */
 .circle-overlay {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -563,7 +566,7 @@ body {
 }
 
 .stata-content img {
-    max-width: 100%;
+    max-width: 100px;
     height: auto;
 }
 
@@ -658,7 +661,7 @@ body {
 }
 
 .footer-blocks{
-    background: red;
+    /* background: red; */
 }
 .footer-blocks p{
     margin: 0;
@@ -677,5 +680,8 @@ body {
     color: white;
     text-decoration: none;
     font-size: 12px;
-    background: blue;
+    /* background: blue; */
+}
+.footer-blocks p{
+    margin-top: 5px;
 }
