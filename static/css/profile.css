@@ -1,5 +1,9 @@
 body{
     overflow: visible;
+    background: url(../img/bg1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 #avatar {
     width: 120px;
@@ -15,12 +19,12 @@ body{
     align-items: center;
 }
 .profile-name {
-    margin-top: 28px;
+    margin-top: 15px;
     font-size: 18px;
 }
 
 .rating {
-    margin-top: 12px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
 }
@@ -29,7 +33,7 @@ body{
 }
 
 .balance {
-    margin-top: 20px;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -46,7 +50,7 @@ body{
     justify-content: space-between;
     padding: 15px 30px;
     border-radius: 30px;
-    margin-top: 20px;
+    margin-top: 15px;
     width: 80vw;
 }
 .eco-active-text {
@@ -168,13 +172,22 @@ body{
     cursor: pointer;
 }
 .settings-logo {
-    margin-top: 40px;
+    margin-top: 20px;
+}
+.settings-logo{
+    width: 50%;
+
 }
 .sett-text {
     margin-top: 40px;
 }
-.settings-btn {
+.settings-btn{
     margin-top: 20px;
+}
+.settings-btn a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
 }
 .privyazat,
 .pereschitat,
@@ -184,4 +197,11 @@ body{
     padding: 10px 30px;
     margin-bottom: 25px;
     text-align: center;
+}
+.top{
+    width: 100%;
+}
+.sett-text2{
+    font-weight: thin;
+    margin-top: 5px;
 }

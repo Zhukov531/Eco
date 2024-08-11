@@ -1,17 +1,19 @@
 @font-face {
-    font-family: 'NoirPro-Regular';
-    src: url('../fonts/noirpro-regular.eot'); /* IE 9 Compatibility Mode */
-    src: url('../fonts/noirpro-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-        url('../fonts/noirpro-regular.woff2') format('woff2'), /* Super Modern Browsers */
-        url('../fonts/noirpro-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-        url('../fonts/noirpro-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-        url('../fonts/noirpro-regular.svg#noirpro-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "NoirPro";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("NoirPro"),
+       /* Если не получилось, загрузит woff2 */
+       url("../fonts/noirpro-regular.woff2") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("../fonts/noirpro-regular.woff") format("woff");
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'NoirPro-Regular';
+    font-family: 'NoirPro';
 
 }
 
@@ -152,21 +154,26 @@ body {
     /* height: 100%; */
     margin: 0;
     color: white;
+    background: red;
+    height: 50%;
 }
 .bluelist1-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     /* background: red; */
-    height: 80%;
+    height: 100%;
+    background: blue;
+
 }
 .bluelist1-content-all {
-    /* background: pink; */
+    background: pink;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .eco1, .eco2 {
     display: flex;
