@@ -19,7 +19,7 @@ body{
     align-items: center;
 }
 .profile-name {
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 18px;
 }
 
@@ -33,7 +33,7 @@ body{
 }
 
 .balance {
-    margin-top: 15px;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -200,8 +200,13 @@ body{
 }
 .top{
     width: 100%;
+    padding: 0;
+    /* background: red; */
 }
 .sett-text2{
     font-weight: thin;
     margin-top: 5px;
+}
+.bottom{
+    margin-top: 15px;
 }
